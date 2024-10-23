@@ -1,0 +1,53 @@
+.container{
+    background-image: url(../images/ground.webp);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .menu{
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    justify-content: space-evenly;
+    display: flex;
+    padding: 1em;
+    text-align: center;
+}
+
+.container .menu h2{
+    color: red;
+}
+.container .menu img{
+    color: red;
+}
+
+.container .menu h3{
+    color: whitesmoke;
+}
+
+.panel{
+    background-color:rgb(140, 80, 40);
+    margin: 4.3em;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 1px black solid;
+}
+
+.panel .square{
+    height: 150px;
+    width: 150px;
+    border: 2px black solid;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(50, 50, 50);
+    justify-content: space-evenly;
+    display: flex;
+    padding: 1em;
+    text-align: center;
+}
