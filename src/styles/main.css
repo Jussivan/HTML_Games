@@ -10,7 +10,7 @@
     background-color: rgb(50, 50, 50);
     justify-content: space-evenly;
     display: flex;
-    padding: 1em;
+    padding: 0.83em;
     text-align: center;
 }
 .container .menu h2{
@@ -20,7 +20,16 @@
     color: red;
 }
 .container .menu h3{
+    margin-top: 5px;
     color: whitesmoke;
+}
+.container .menu .menu-lives label{
+    display: flex;
+}
+.container .menu .menu-lives img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
 }
 .panel{
     background-color:rgb(140, 80, 40);
