@@ -1,3 +1,3 @@
-# Whack-a-Mole
+# HTML Games
 
-The Whack-a-Mole game made in HTML, CSS, and JavaScript.
+Browser Games made using HTML, CSS and JavaScript.
