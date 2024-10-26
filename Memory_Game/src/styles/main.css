@@ -4,6 +4,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: #f90091;
+    user-select: none;
 }
 
 .container{
@@ -38,11 +39,34 @@ h2{
 .item{
     position: relative;
     width: 100px;
-    height: 100pc;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: whitesmoke;
+
+    font-size: 1.5em;
+    transform: rotateY(180deg);
+    transition: 0.27s;
+}
+
+.item::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #510e35;
+    transition: 0.27s;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.item .boxOpen{
+    transform: rotateY(0deg);
+}
+
+.boxOpen::after,
+.boxMatch::after{
+    transform: rotateY(180deg);
 }
 
 .reset{
