@@ -13,22 +13,34 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(255, 0, 179) 50%, rgb(253, 220, 255) 100%);
-    padding: 40px 60px;
+    padding: 25px 80px;
 }
 
 h2{
-    font-size: 3em;
+    font-size: 2.75em;
+    color: #f90091;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+
+.moves{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
     color: whitesmoke;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.075em;
 }
 
 .game{
     border: 2px solid whitesmoke;
-    width: 430px;
-    height: 430px;
+    padding: 5px;
+    width: 444px;
+    height: 444px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -80,4 +92,15 @@ h2{
     font-weight: bolder;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: large;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: #f90091;
 }

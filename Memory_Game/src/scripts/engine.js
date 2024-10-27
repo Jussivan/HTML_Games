@@ -4,8 +4,8 @@ const emojis = [
 ];
 
 let openCards = [];
-
 let shuffleEmojis = emojis.sort(() => Math.random() - 0.5);
+var moves = 0;
 
 for (let i = 0; i < shuffleEmojis.length; i++) {
     let box = document.createElement("div");
@@ -27,5 +27,19 @@ function handleClick() {
 }
 
 function checkMatch() {
-    
+    if(openCards[0].innerHTML===openCards[1].innerHTML) {
+        openCards[0].classList.add("boxMatch");
+        openCards[1].classList.add("boxMatch");
+    } else {
+        openCards[0].classList.remove("boxOpen");
+        openCards[1].classList.remove("boxOpen");
+    }
+
+    openCards = [];
+    moves++;
+
+    if(document.querySelectorAll(".boxMatch").length===emojis.length){
+        alert(`Você venceu o Jogo da Memória em ${moves} movimentos`);
+    }
+    document.getElementById("moves").innerHTML = moves;
 }
