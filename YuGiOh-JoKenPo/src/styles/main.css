@@ -1,0 +1,72 @@
+body{
+    background-color: black;
+}
+
+.bg_video{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.bg_video video{
+    width: 100vw;
+    height: 100vh;
+    opacity: 10%;
+}
+
+.bg_video::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(29, 20, 0) 50%, rgba(0,0,0,1) 100%);
+    mix-blend-mode: hue;
+}
+
+.container{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    height: 100vh;
+}
+
+.container .left{
+    text-align: right;
+    width: 35%;
+    min-width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.score_box{
+    padding: 30px;
+    border: 10px rgba(0, 0, 0, 0.6) solid;
+    border-style:outset;
+    text-align: center;
+}
+
+.stars{
+    margin: 5px;
+}
+
+.card_details{
+    background-color: bisque;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#AtkDef{
+    font-size: small;
+    font-weight: bold;
+    align-self: self-end;
+}
