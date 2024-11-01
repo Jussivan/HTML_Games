@@ -17,15 +17,15 @@
 <body>
     <div class="container">
         <div class="left framed-golden-2">
-            <div class="score_box">Win: 0 | Lose: 0</div>
+            <div class="score_box" id="score_box">Win: 0 | Lose: 0</div>
             <img class="stars" src="./src/assets/starslevel_yugioh.png">
             <div class="menu_avatar">
-                <img id="card_image" alt="card">
+                <img id="card_image">
             </div>
             <div class="card_details">
-                <p id="card_name">aaaa</p>
-                <p id="card_type">aaaa</p>
-                <p id="AtkDef">ATK / 0 DEF / 0</p>
+                <p id="card_name"></p>
+                <p id="card_type"></p>
+                <p id="status"></p>
             </div>
             <a href="https://github.com/Jussivan">Made By Jussivan</a>
         </div>
@@ -44,7 +44,7 @@
                         </div>
                     </div>
                     <div class="versus_bottom">
-                        <button id="next_duel" class="rpgui-button" onclick="resetDuel()">Ganhou</button>
+                        <button id="next_duel" class="rpgui-button" onclick="resetDuel()"></button>
                     </div>
                 </div>
                 <div class="card_box framed" id="player_cards"></div>
