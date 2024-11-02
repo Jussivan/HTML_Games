@@ -157,14 +157,18 @@ async function resetDuel() {
     state.fieldCards.player.style.display = "none";
     state.fieldCards.computer.style.display = "none";
 
+    state.cardSprites.name.innerText = "";
+    state.cardSprites.type.innerText = "";
+    state.cardSprites.status.innerText = "";
+
     init();
 }
 
 async function playAudio(duelResults) {
     winAudio = new Audio("./src/assets/audios/win.wav");
-    winAudio.volume = 0.05;
+    winAudio.volume = 0.25;
     loseAudio = new Audio("./src/assets/audios/lose.wav");
-    loseAudio.volume = 0.05;
+    loseAudio.volume = 0.25;
 
     if(duelResults==="YOU WIN") {
         winAudio.play();
@@ -175,8 +179,15 @@ async function playAudio(duelResults) {
 }
 
 function init() {
+    const bgm = document.getElementById("bgm");
+    bgm.volume = 0.5;
+    bgm.play();
+
+    state.fieldCards.player.style.display = "none";
+    state.fieldCards.computer.style.display = "none";
+
     drawCards(5, playerSides.player1);
     drawCards(5, playerSides.computer);
 }
-
+  
 init();
