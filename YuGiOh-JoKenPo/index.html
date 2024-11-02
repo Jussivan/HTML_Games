@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YuGiOh - JoKenPo</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./src/assets/favicon/Favicon.ico">
     <!--Styles-->
     <link rel="stylesheet" href="src/styles/reset.css">
     <link rel="stylesheet" href="src/styles/main.css">
@@ -15,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
+    <audio id="bgm" loop>
+        <source src="./src/assets/audios/egyptian_duel.mp3" type="audio/mp3"/>
+    </audio>
     <div class="container">
         <div class="left framed-golden-2">
             <div class="score_box" id="score_box">Win: 0 | Lose: 0</div>
@@ -38,7 +43,7 @@
                         <div class="infield">
                             <img id="player_infield_card" height="180px" width="125px">
                         </div>
-                        <img src="./src/assets/icons/millenium2.png" height="100px">
+                        <img src="./src/assets/icons/millenium5.png" height="100px">
                         <div class="infield">
                             <img id="computer_infield_card" height="180px" width="125px">
                         </div>
