@@ -178,16 +178,19 @@ async function playAudio(duelResults) {
     
 }
 
-function init() {
-    const bgm = document.getElementById("bgm");
-    bgm.volume = 0.5;
-    bgm.play();
+async function playMusic() {
+        const bgm = document.getElementById("bgm");
+        bgm.volume = 0.5;
+        bgm.play();
+}
 
+function init() {
+    playMusic();
     state.fieldCards.player.style.display = "none";
     state.fieldCards.computer.style.display = "none";
 
     drawCards(5, playerSides.player1);
     drawCards(5, playerSides.computer);
 }
-  
+
 init();
