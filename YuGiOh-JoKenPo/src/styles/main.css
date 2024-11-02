@@ -1,6 +1,9 @@
+*{
+    cursor: url("../assets/cursor/yugicursor.png"), default;
+}
+
 body{
     background-image: url(../assets/background_blocks.png);
-    cursor: url("../assets/cursor/yugicursor.png"), default;
 }
 
 button, a, img:hover, button:hover, a:hover{
